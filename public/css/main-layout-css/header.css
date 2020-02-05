@@ -96,3 +96,12 @@ header{
 
     background: rgba(255, 255, 255, 0.2);
 }
+
+@media screen and (max-width: 600px){
+    .mobile-nav{
+        display: block;
+    }
+    .desktop-nav{
+        display: none;
+    }
+}
