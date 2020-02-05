@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"> {{-- 300, 400, 700 --}}
-    <link rel="stylesheet" href="{{ asset('css/main-layout-css/global.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/main-layout-css/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main-layout-css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main-layout-css/footer.css') }}">
+
+    @stack('css')
+
     <title>@yield('pageTitle')</title>
 </head>
 <body>
